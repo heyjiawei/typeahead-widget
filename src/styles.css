@@ -1,0 +1,47 @@
+.App {
+  font-family: sans-serif;
+}
+
+.form--container {
+  --width: 200px;
+  --suggestion-zIndex: 1;
+}
+
+.input {
+  width: var(--width);
+}
+
+.searchSuggestion-container {
+  padding: 0;
+  margin: 0;
+  border-radius: 2px;
+  max-height: 100px;
+  overflow-y: auto;
+  width: var(--width);
+  z-index: var(--suggestion-zIndex);
+
+  box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014,
+    0 9px 28px 8px #0000000d;
+}
+
+.searchSuggestion-container li {
+  line-height: 1.5715;
+  margin-left: 5px;
+  list-style: none;
+}
+
+.searchSuggestion-container li:focus {
+  background-color: #0000000d;
+}
+
+.searchItem--focused {
+  background-color: #0000000d;
+}
+
+li:focus {
+  background-color: red;
+}
+
+li:focus-visible {
+  background-color: green;
+}
